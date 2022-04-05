@@ -9,9 +9,11 @@ input.onButtonPressed(Button.B, function () {
 })
 music.setTempo(100)
 basic.forever(function () {
-    music.playTone(262, music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.rest(music.beat(BeatFraction.Sixteenth))
+    while (true) {
+        music.playTone(262, music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.rest(music.beat(BeatFraction.Sixteenth))
+    }
 })
